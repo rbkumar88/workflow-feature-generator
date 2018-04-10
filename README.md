@@ -3,17 +3,27 @@
 
 The sample uses a JSON request to generate/setup a workflow which in turn generates a Cucumber feature file and immediately invoke ```mvn verify``` to run the same. The tests combine BDD feature stories with the famous 
 Gherkin syntax and Citrus integration test capabilities. 
+
+Build
+-------
+```mvn clean install``` 
+
+The above step will complete with 0 tests
  
 Run
 ---------
-```mvn spring:boot run```
+```mvn spring:boot run``` or ```java -jar target/workflow-feature-generator-0.0.1-SNAPSHOT.jar```
+
+Pre-requisite
+---------
+In order to test the same, the [demo-service](../demo-service/) jar which must have been installed into your local maven repository using `mvn clean install` and be running too beforehand.
 
 Swagger url
 ----------
 http://localhost:8080/swagger-ui.html
 
-Get started
----------
+Running the below request under /workflow/add will create a feature file with name as given in "featureName" value and run the scenarios in the feature file.
+
 ```
 {
   "featureDescription": "feature description",
