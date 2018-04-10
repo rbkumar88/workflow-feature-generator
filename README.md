@@ -20,6 +20,8 @@ In order to test the same, the [demo-service](../../../demo-service/) jar which 
 
 Swagger url
 ----------
+The service also exposes a Swagger API documentation endpoint at /v2/api-docs. This can also be used to import into Postman as a collection.
+
 http://localhost:8080/swagger-ui.html
 
 Running the below request under /workflow/add will create a feature file with name as given in "featureName" value and run the scenarios in the feature file.
@@ -65,7 +67,11 @@ Running the below request under /workflow/add will create a feature file with na
   ]
 }
 ```
-
+TO-DO (in the order of importance)
+-------
+* Currently works only with hard-coded endpoint URI in [CitrusEndpointConfig.java][5]
+* Separate out generating feature file creation and actual test run
+* Email notification on test failure
 
 Further information
 ---------
@@ -77,3 +83,4 @@ a complete [reference manual][3].
  [2]: https://www.citrusframework.org
  [3]: https://www.citrusframework.org/reference/html/
  [4]: https://www.citrusframework.org/reference/html#cucumber
+ [5]: https://github.com/rbkumar88/workflow-feature-generator/blob/master/src/test/java/com/workflow/CitrusEndpointConfig.java#L15
