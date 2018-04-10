@@ -16,6 +16,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<lombok.version>1.16.18</lombok.version>
+		<cucumber.version>2.3.1</cucumber.version>
+		<citrus.version>2.7.4</citrus.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -56,6 +58,50 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.shared</groupId>
+			<artifactId>maven-invoker</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<!-- Cucumber -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-spring</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Citrus -->
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-core</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-java-dsl</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-http</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.consol.citrus</groupId>
+			<artifactId>citrus-cucumber</artifactId>
+			<version>${citrus.version}</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<build>
