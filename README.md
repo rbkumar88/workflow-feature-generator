@@ -16,7 +16,7 @@ Run
 
 Pre-requisite
 ---------
-In order to test the same, the [demo-service](../demo-service/) jar which must have been installed into your local maven repository using `mvn clean install` and be running too beforehand.
+In order to test the same, the [demo-service](../../../demo-service/) jar which must have been installed into your local maven repository using `mvn clean install` and be running too beforehand.
 
 Swagger url
 ----------
