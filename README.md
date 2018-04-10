@@ -41,11 +41,6 @@ Running the below request under /workflow/add will create a feature file with na
       "contextVariables": {},
       "endpointUrl": "http://localhost:8181/",
       "httpMethod": "GET",
-      "httpStatusCode": 400,
-      "requestBody": "",
-      "requestHeaders": {},
-      "responseBody": "string",
-      "schemaLocation": "string",
       "stepType": "ACTION"
     },
 {
@@ -56,10 +51,7 @@ Running the below request under /workflow/add will create a feature file with na
       "contextPath": "/test",
       "contextVariables": {},
       "endpointUrl": "http://localhost:8181/",
-      "httpMethod": "GET",
       "httpStatusCode": 200,
-      "requestBody": "",
-      "requestHeaders": {},
       "responseBody": "string",
       "schemaLocation": "string",
       "stepType": "VALIDATION"
