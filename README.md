@@ -25,7 +25,7 @@ Get started
       "communicationProtocol": "HTTP_REST",
       "contentType": "",
       "context": "string",
-      "contextPath": "/custom/health",
+      "contextPath": "/test",
       "contextVariables": {},
       "endpointUrl": "http://localhost:8181/",
       "httpMethod": "GET",
@@ -39,7 +39,7 @@ Get started
 {
       "additionalParams": {},
       "communicationProtocol": "HTTP_REST",
-      "contentType": "APPLICATION/JSON",
+      "contentType": "application/json",
       "context": "string",
       "contextPath": "/test",
       "contextVariables": {},
