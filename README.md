@@ -64,6 +64,7 @@ TO-DO (in the order of importance)
 * Currently works with dynamic creation of HttpClient, but need to read the endpoint url and bean name/id from properties/cucumber file- TBD
 * Separate out generating feature file creation and actual test run
 * Email notification on test failure
+* Currently works only for HTTP_REST protocol.Implement the same for other communication protocols like JMS,HTTP_SOAP etc.
 
 Further information
 ---------
