@@ -11,6 +11,7 @@ Feature: ${featureDescription}
     <#case "HTTP_REST">
     <#--<#if i == 0>-->
     <#if step?index == 0>
+        Given http-client "votingClient"
         Given URL: ${step.endpointUrl}
         Given variable id is "citrus:randomUUID()"
     </#if>
